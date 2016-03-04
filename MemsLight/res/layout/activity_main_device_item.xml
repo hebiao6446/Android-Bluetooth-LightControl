@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageButton
+        android:id="@+id/change_status"
+        android:layout_width="72dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:onClick="onSwitchOne"
+        android:background="@drawable/light_status"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="5dp" />
+
+    <ImageButton
+        android:id="@+id/device_settings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:onClick="onSettings"
+        android:background="@drawable/settings"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/device_settings"
+        android:layout_toEndOf="@id/change_status"
+        android:onClick="onReconnect"
+        android:orientation="vertical"
+        android:background="@drawable/cover_selector">
+
+        <TextView
+            android:id="@+id/device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="26sp"
+            android:layout_marginStart="10dp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp">
+            <ImageView android:id="@+id/alarm_indicator"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_alarm"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/device_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/reconnect_device"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toStartOf="@id/device_settings"
+        android:layout_centerVertical="true"
+        android:onClick="reconnect"
+        android:background="@drawable/reconnect"
+        android:scaleType="fitXY"
+        android:layout_marginEnd="15dp"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

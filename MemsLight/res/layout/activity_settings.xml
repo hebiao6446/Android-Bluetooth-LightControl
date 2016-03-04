@@ -1,0 +1,401 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.mems.LEDSettingsActivity"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#66000012"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:onClick="onBackClick"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_back"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_details"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:src="@drawable/add_device"
+            android:scaleType="fitCenter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:onClick="onRemoveLED"
+            android:layout_gravity="end"
+            android:text="@string/remove_led"
+            style="?android:buttonBarButtonStyle" />
+
+    </RelativeLayout>
+    
+    <!-- first page -->
+	<ScrollView android:id="@+id/first_page"
+	    android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:scrollbars="none"
+	            android:layout_gravity="center"
+                android:layout_weight="1.0"
+		        android:gravity="center">
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+	        android:orientation="vertical">
+	
+	        <!--TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+                android:textSize="@dimen/size_28"
+	            android:text="@string/change_led_brightness"/-->
+	
+	        <!--SeekBar
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/bright_bar"
+	            android:layout_marginTop="10dp"/-->
+	
+	        <!--TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+                android:textSize="@dimen/size_28"
+	            android:text="@string/change_led_color"/-->
+	
+	        <!--<org.mems.ColorChooser-->
+	            <!--android:id="@+id/color_chooser"-->
+	            <!--android:layout_width="300dp"-->
+	            <!--android:layout_height="300dp"-->
+	            <!--android:scaleType="fitCenter"-->
+	            <!--android:layout_gravity="center"-->
+                <!--android:padding="15dp"-->
+	            <!--android:src="@drawable/rgb"/>-->
+
+            <org.mems.ColorPickerView android:id="@+id/color_chooser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/size_28"
+                    android:text="@string/change_led_name"/>
+
+                <TextView android:id="@+id/light_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/size_28"
+                    android:textColor="#ffffff"/>
+
+                <EditText
+                    android:id="@+id/led_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:textSize="@dimen/size_28"
+                    android:hint="@string/led_name"/>
+
+                <Button
+                    android:id="@+id/btn_save_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onChangeName"
+                    android:textSize="@dimen/size_28"
+                    android:background="@drawable/dialog_button_normal"
+                    android:text="@string/btn_change_name"/>
+            </LinearLayout>
+	    </LinearLayout>
+    </ScrollView>
+
+    <!-- second page -->
+    <GridView android:id="@+id/second_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:numColumns="4"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:visibility="gone"/>
+
+    <!-- third page -->
+    <LinearLayout android:id="@+id/third_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1.0"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <!--time on-->
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@drawable/settings_list1_d">
+	
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/size_28"
+                    android:textColor="@android:color/white"
+	                android:text="@string/schedule_on"/>
+	
+	            <ImageButton
+	                android:id="@+id/switch_schedule_on"
+	                android:layout_width="100dp"
+	                android:layout_height="37dp"
+	                android:layout_gravity="end"
+                    android:layout_marginLeft="10dp"
+	                android:onClick="switchScheduleOnClick"
+                    android:padding="5dp"
+	                android:background="@drawable/light_status"
+	                android:scaleType="fitCenter"/>
+	        </LinearLayout>
+
+            <!--TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+                android:background="@android:color/darker_gray"/-->
+
+            <RelativeLayout android:id="@+id/timeschedule_on_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@drawable/settings_list2_d">
+                <Button
+                    android:id="@+id/set_time_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_time"
+                    android:gravity="start|center_vertical"
+                    android:onClick="onSetTimeForTurnOn"
+                    style="?android:buttonBarButtonStyle"
+                    android:textColor="@android:color/white"
+                    android:layout_alignParentLeft="true"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_arrow"/>
+            </RelativeLayout>
+
+            <!--TextView android:id="@+id/timeschedule_on_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+                android:background="@android:color/darker_gray"/-->
+
+            <!-- going on.-->
+            <LinearLayout android:id="@+id/timeschedule_on_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/settings_list3_d">
+                <Button
+                    android:id="@+id/goingon_btn1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="立即"
+                    android:onClick="onGoingOnBtn1Click"
+                    android:background="@drawable/button_left"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1.0"
+                    android:layout_alignParentLeft="true"/>
+                <Button
+                    android:id="@+id/goingon_btn2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="渐亮30秒"
+                    android:onClick="onGoingOnBtn2Click"
+                    android:background="@drawable/button_middle"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1.0"
+                    android:layout_centerInParent="true"/>
+                <Button
+                    android:id="@+id/goingon_btn3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="渐亮60秒"
+                    android:onClick="onGoingOnBtn3Click"
+                    android:background="@drawable/button_right"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1.0"
+                    android:layout_alignParentRight="true"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--time off-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@drawable/settings_list1_d">
+	
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+                    android:textSize="@dimen/size_28"
+	                android:layout_gravity="center_vertical"
+                    android:textColor="@android:color/white"
+	                android:text="@string/schedule_off"/>
+	
+	            <ImageButton
+	                android:id="@+id/switch_schedule_off"
+	                android:layout_width="100dp"
+	                android:layout_height="37dp"
+	                android:layout_gravity="end"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+	                android:onClick="switchScheduleOffClick"
+	                android:background="@drawable/light_status"
+	                android:scaleType="fitCenter"/>
+	        </LinearLayout>
+
+            <!--TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+                android:background="@android:color/darker_gray"/-->
+
+            <RelativeLayout android:id="@+id/timeschedule_off_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@drawable/settings_list2_d">
+                <Button
+                    android:id="@+id/set_time_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_time"
+                    android:gravity="start|center_vertical"
+                    android:onClick="onSetTimeForTurnOff"
+                    style="?android:buttonBarButtonStyle"
+                    android:textColor="@android:color/white"
+                    android:layout_alignParentLeft="true"/>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_arrow"/>
+            </RelativeLayout>
+
+            <!--TextView android:id="@+id/timeschedule_off_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+                android:background="@android:color/darker_gray"/-->
+
+            <!-- going off.-->
+            <LinearLayout android:id="@+id/timeschedule_off_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@drawable/settings_list3_d">
+                <Button
+                    android:id="@+id/goingoff_btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立即"
+                    android:onClick="onGoingOffBtn1Click"
+                    android:background="@drawable/button_left"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1.0"
+                    android:layout_alignParentLeft="true"/>
+                <Button
+                    android:id="@+id/goingoff_btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="渐灭30秒"
+                    android:onClick="onGoingOffBtn2Click"
+                    android:background="@drawable/button_middle"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1.0"
+                    android:layout_centerInParent="true"/>
+                <Button
+                    android:id="@+id/goingoff_btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="渐灭60秒"
+                    android:onClick="onGoingOffBtn3Click"
+                    android:background="@drawable/button_right"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1.0"
+                    android:layout_alignParentRight="true"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button android:id="@+id/ontimesavebtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="onTimeSaveClick"
+            android:enabled="false"
+            android:textSize="@dimen/size_28"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/dialog_button_normal"
+            android:visibility="gone"
+            android:text="保存"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:gravity="center"
+        android:background="#66000012">
+        <Button android:id="@+id/Button1" style="@style/TopTypeRight.Button"
+            android:layout_width="0px" android:layout_weight="1"
+            android:layout_height="wrap_content" android:text="常用" />
+        <Button android:id="@+id/Button2" style="@style/TopTypeRight.Button"
+            android:layout_width="0px" android:layout_weight="1"
+            android:layout_height="wrap_content" android:text="情景" />
+        <Button android:id="@+id/Button3" style="@style/TopTypeRight.Button"
+            android:layout_width="0px" android:layout_weight="1"
+            android:layout_height="wrap_content" android:text="闹钟" />
+    </LinearLayout>
+</LinearLayout>

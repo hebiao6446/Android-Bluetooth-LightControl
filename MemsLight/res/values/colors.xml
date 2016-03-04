@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color  name="stroke">#E6E8FA</color>
+    <color  name="ziti">#f5f5f5</color>
+    <drawable name="progress">#ff0099CC</drawable>
+    <drawable name="seekbar_background">#00ffffff</drawable>
+</resources>

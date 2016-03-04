@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.mems.MainActivity"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#66000012">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/ziti"
+            android:textSize="25sp" />
+
+        <ImageButton android:id="@+id/helpbtn"
+            android:src="@drawable/icon_help"
+            android:scaleType="fitCenter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:onClick="onOpenHelp"
+            style="?android:buttonBarButtonStyle" />
+
+        <ImageButton
+            android:src="@drawable/add_device"
+            android:scaleType="fitCenter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="onAddDevice"
+            android:id="@+id/addbtn"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/helpbtn"
+            style="?android:buttonBarButtonStyle" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/device_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1" />
+
+    <ImageButton android:id="@+id/switchall_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/switch_all_btn"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:onClick="onSwitchAll"
+        style="?android:buttonBarButtonStyle" />
+
+</LinearLayout>

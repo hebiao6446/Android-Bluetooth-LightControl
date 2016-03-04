@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView android:id="@+id/lightTou"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:scaleType="fitCenter"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_jianbian3"
+        android:layout_alignParentTop="true" />
+
+    <ImageView android:id="@+id/lightBing"
+        android:layout_width="35dp"
+        android:layout_height="72dp"
+        android:scaleType="fitCenter"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        android:src="@drawable/ic_dengba"
+        android:layout_below="@id/lightTou"/>
+
+    <TextView
+        android:id="@+id/lightName"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lightBing"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="渐变"
+        android:textColor="@color/ziti"
+        android:textSize="@dimen/size_28" />
+
+</RelativeLayout>

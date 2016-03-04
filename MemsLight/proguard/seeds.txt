@@ -1,0 +1,266 @@
+android.support.v4.app.BackStackState
+android.support.v4.app.BackStackState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.Fragment$SavedState
+android.support.v4.app.Fragment$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentManagerState
+android.support.v4.app.FragmentManagerState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentState
+android.support.v4.app.FragmentState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentTabHost: void setOnTabChangedListener(android.widget.TabHost$OnTabChangeListener)
+android.support.v4.app.FragmentTabHost$SavedState
+android.support.v4.app.FragmentTabHost$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status[] values()
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status valueOf(java.lang.String)
+android.support.v4.media.MediaMetadataCompat
+android.support.v4.media.MediaMetadataCompat: android.os.Parcelable$Creator CREATOR
+android.support.v4.media.RatingCompat
+android.support.v4.media.RatingCompat: android.os.Parcelable$Creator CREATOR
+android.support.v4.media.session.MediaSessionCompat$Token
+android.support.v4.media.session.MediaSessionCompat$Token: android.os.Parcelable$Creator CREATOR
+android.support.v4.media.session.PlaybackStateCompat
+android.support.v4.media.session.PlaybackStateCompat: android.os.Parcelable$Creator CREATOR
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColor(int)
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColorResource(int)
+android.support.v4.view.PagerTabStrip: int getTabIndicatorColor()
+android.support.v4.view.PagerTabStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.PagerTabStrip: void setBackgroundColor(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundResource(int)
+android.support.v4.view.PagerTabStrip: void setDrawFullUnderline(boolean)
+android.support.v4.view.PagerTabStrip: boolean getDrawFullUnderline()
+android.support.v4.view.PagerTabStrip: int getMinHeight()
+android.support.v4.view.PagerTitleStrip: void setSingleLineAllCaps(android.widget.TextView)
+android.support.v4.view.PagerTitleStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTitleStrip: int getTextSpacing()
+android.support.v4.view.PagerTitleStrip: void setNonPrimaryAlpha(float)
+android.support.v4.view.PagerTitleStrip: void setTextColor(int)
+android.support.v4.view.PagerTitleStrip: void setGravity(int)
+android.support.v4.view.PagerTitleStrip: int getMinHeight()
+android.support.v4.view.ViewPager: void setScrollState(int)
+android.support.v4.view.ViewPager: void setAdapter(android.support.v4.view.PagerAdapter)
+android.support.v4.view.ViewPager: android.support.v4.view.PagerAdapter getAdapter()
+android.support.v4.view.ViewPager: void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener)
+android.support.v4.view.ViewPager: int getClientWidth()
+android.support.v4.view.ViewPager: void setCurrentItem(int)
+android.support.v4.view.ViewPager: int getCurrentItem()
+android.support.v4.view.ViewPager: void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+android.support.v4.view.ViewPager: void setChildrenDrawingOrderEnabledCompat(boolean)
+android.support.v4.view.ViewPager: int getOffscreenPageLimit()
+android.support.v4.view.ViewPager: void setOffscreenPageLimit(int)
+android.support.v4.view.ViewPager: void setPageMargin(int)
+android.support.v4.view.ViewPager: int getPageMargin()
+android.support.v4.view.ViewPager: void setPageMarginDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.ViewPager: void setPageMarginDrawable(int)
+android.support.v4.view.ViewPager: void setScrollingCacheEnabled(boolean)
+android.support.v4.view.ViewPager$SavedState
+android.support.v4.view.ViewPager$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.widget.DrawerLayout: void setScrimColor(int)
+android.support.v4.widget.DrawerLayout: void setDrawerListener(android.support.v4.widget.DrawerLayout$DrawerListener)
+android.support.v4.widget.DrawerLayout: void setDrawerLockMode(int)
+android.support.v4.widget.DrawerLayout: void setStatusBarBackground(android.graphics.drawable.Drawable)
+android.support.v4.widget.DrawerLayout: void setStatusBarBackground(int)
+android.support.v4.widget.DrawerLayout: void setStatusBarBackgroundColor(int)
+android.support.v4.widget.DrawerLayout$SavedState
+android.support.v4.widget.DrawerLayout$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.widget.SlidingPaneLayout: void setParallaxDistance(int)
+android.support.v4.widget.SlidingPaneLayout: int getParallaxDistance()
+android.support.v4.widget.SlidingPaneLayout: void setSliderFadeColor(int)
+android.support.v4.widget.SlidingPaneLayout: int getSliderFadeColor()
+android.support.v4.widget.SlidingPaneLayout: void setCoveredFadeColor(int)
+android.support.v4.widget.SlidingPaneLayout: int getCoveredFadeColor()
+android.support.v4.widget.SlidingPaneLayout: void setPanelSlideListener(android.support.v4.widget.SlidingPaneLayout$PanelSlideListener)
+android.support.v4.widget.SlidingPaneLayout: void setShadowDrawable(android.graphics.drawable.Drawable)
+android.support.v4.widget.SlidingPaneLayout: void setShadowDrawableLeft(android.graphics.drawable.Drawable)
+android.support.v4.widget.SlidingPaneLayout: void setShadowDrawableRight(android.graphics.drawable.Drawable)
+android.support.v4.widget.SlidingPaneLayout: void setShadowResource(int)
+android.support.v4.widget.SlidingPaneLayout: void setShadowResourceLeft(int)
+android.support.v4.widget.SlidingPaneLayout: void setShadowResourceRight(int)
+android.support.v4.widget.SlidingPaneLayout$SavedState
+android.support.v4.widget.SlidingPaneLayout$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.widget.SwipeRefreshLayout: void setColorViewAlpha(int)
+android.support.v4.widget.SwipeRefreshLayout: void setSize(int)
+android.support.v4.widget.SwipeRefreshLayout: void setOnRefreshListener(android.support.v4.widget.SwipeRefreshLayout$OnRefreshListener)
+android.support.v4.widget.SwipeRefreshLayout: void setRefreshing(boolean)
+android.support.v4.widget.SwipeRefreshLayout: void setAnimationProgress(float)
+android.support.v4.widget.SwipeRefreshLayout: void setProgressBackgroundColor(int)
+android.support.v4.widget.SwipeRefreshLayout: void setColorScheme(int[])
+android.support.v4.widget.SwipeRefreshLayout: void setColorSchemeResources(int[])
+android.support.v4.widget.SwipeRefreshLayout: void setColorSchemeColors(int[])
+android.support.v4.widget.SwipeRefreshLayout: void setDistanceToTriggerSync(int)
+org.mems.BLEService
+org.mems.BLEService: BLEService()
+org.mems.BLEService$BLEDeviceContext: void reconnect()
+org.mems.ColorChooser: void setDelegate(org.mems.ColorChooser$ImageRGBDelegate)
+org.mems.ColorPickerView
+org.mems.ColorPickerView: ColorPickerView(android.content.Context)
+org.mems.ColorPickerView: ColorPickerView(android.content.Context,android.util.AttributeSet)
+org.mems.ColorPickerView: void setOnColorChangedListenner(org.mems.ColorPickerView$OnColorChangedListener)
+org.mems.ColorPickerView: android.graphics.Bitmap getGradual()
+org.mems.ColorPickerView: android.graphics.Bitmap getGradual2()
+org.mems.HelpWebSite
+org.mems.HelpWebSite: HelpWebSite()
+org.mems.LEDSettingsActivity
+org.mems.LEDSettingsActivity: LEDSettingsActivity()
+org.mems.LEDSettingsActivity: void onChangeName(android.view.View)
+org.mems.LEDSettingsActivity: void onBackClick(android.view.View)
+org.mems.LEDSettingsActivity: void onRemoveLED(android.view.View)
+org.mems.LEDSettingsActivity: void switchScheduleOnClick(android.view.View)
+org.mems.LEDSettingsActivity: void switchScheduleOffClick(android.view.View)
+org.mems.LEDSettingsActivity: void onSetTimeForTurnOn(android.view.View)
+org.mems.LEDSettingsActivity: void onSetTimeForTurnOff(android.view.View)
+org.mems.LEDSettingsActivity: void onTimeSaveClick(android.view.View)
+org.mems.LEDSettingsActivity: void onGoingOffBtn3Click(android.view.View)
+org.mems.LEDSettingsActivity: void onGoingOffBtn2Click(android.view.View)
+org.mems.LEDSettingsActivity: void onGoingOffBtn1Click(android.view.View)
+org.mems.LEDSettingsActivity: void onGoingOnBtn1Click(android.view.View)
+org.mems.LEDSettingsActivity: void onGoingOnBtn2Click(android.view.View)
+org.mems.LEDSettingsActivity: void onGoingOnBtn3Click(android.view.View)
+org.mems.MainActivity
+org.mems.MainActivity: MainActivity()
+org.mems.MainActivity: void onOpenHelp(android.view.View)
+org.mems.MainActivity: void onAddDevice(android.view.View)
+org.mems.MainActivity: void onSwitchAll(android.view.View)
+org.mems.MainActivity: void onReconnect(android.view.View)
+org.mems.MainActivity: void onSettings(android.view.View)
+org.mems.MainActivity: void onSwitchOne(android.view.View)
+org.mems.R$color: int stroke
+org.mems.R$color: int ziti
+org.mems.R$dimen: int size_28
+org.mems.R$drawable: int add_device
+org.mems.R$drawable: int background
+org.mems.R$drawable: int bottom_bar_bg
+org.mems.R$drawable: int bottomtitle_main
+org.mems.R$drawable: int button_left
+org.mems.R$drawable: int button_middle
+org.mems.R$drawable: int button_normal
+org.mems.R$drawable: int button_right
+org.mems.R$drawable: int common_btn_font_color
+org.mems.R$drawable: int cover_selector
+org.mems.R$drawable: int dialog_button_normal
+org.mems.R$drawable: int drag_ball
+org.mems.R$drawable: int ic_arrow
+org.mems.R$drawable: int ic_back
+org.mems.R$drawable: int ic_dengba
+org.mems.R$drawable: int ic_edit
+org.mems.R$drawable: int ic_jianbian
+org.mems.R$drawable: int ic_jianbian3
+org.mems.R$drawable: int ic_kuaishan
+org.mems.R$drawable: int ic_kuaishan3
+org.mems.R$drawable: int ic_launcher
+org.mems.R$drawable: int ic_lenglie
+org.mems.R$drawable: int ic_manshan
+org.mems.R$drawable: int ic_manshan2
+org.mems.R$drawable: int ic_manshan3
+org.mems.R$drawable: int ic_meihuo
+org.mems.R$drawable: int ic_mingliang
+org.mems.R$drawable: int ic_mwennuan
+org.mems.R$drawable: int ic_myuedu
+org.mems.R$drawable: int ic_myueguang
+org.mems.R$drawable: int ic_statebaoshan
+org.mems.R$drawable: int icon_alarm
+org.mems.R$drawable: int icon_help
+org.mems.R$drawable: int l_d
+org.mems.R$drawable: int l_n
+org.mems.R$drawable: int light_off
+org.mems.R$drawable: int light_on
+org.mems.R$drawable: int light_status
+org.mems.R$drawable: int m_d
+org.mems.R$drawable: int m_n
+org.mems.R$drawable: int main_button_pressed_cover
+org.mems.R$drawable: int progress
+org.mems.R$drawable: int r_d
+org.mems.R$drawable: int r_n
+org.mems.R$drawable: int reading__color_view__button
+org.mems.R$drawable: int reading__color_view__button_press
+org.mems.R$drawable: int reading__color_view__saturation
+org.mems.R$drawable: int reading__color_view__saturation_press
+org.mems.R$drawable: int reconnect
+org.mems.R$drawable: int rgb
+org.mems.R$drawable: int seekbar_background
+org.mems.R$drawable: int seekbar_style
+org.mems.R$drawable: int seekbar_style_color
+org.mems.R$drawable: int settings
+org.mems.R$drawable: int settings_list1_d
+org.mems.R$drawable: int settings_list2_d
+org.mems.R$drawable: int settings_list3_d
+org.mems.R$drawable: int settings_list_d
+org.mems.R$drawable: int switch_all_btn
+org.mems.R$drawable: int switch_all_off
+org.mems.R$drawable: int switch_all_on
+org.mems.R$drawable: int welcome
+org.mems.R$id: int Button1
+org.mems.R$id: int Button2
+org.mems.R$id: int Button3
+org.mems.R$id: int TextView01
+org.mems.R$id: int addbtn
+org.mems.R$id: int alarm_indicator
+org.mems.R$id: int btn_finish
+org.mems.R$id: int btn_save_name
+org.mems.R$id: int change_status
+org.mems.R$id: int color_chooser
+org.mems.R$id: int device_list
+org.mems.R$id: int device_name
+org.mems.R$id: int device_settings
+org.mems.R$id: int device_status
+org.mems.R$id: int first_page
+org.mems.R$id: int goingoff_btn1
+org.mems.R$id: int goingoff_btn2
+org.mems.R$id: int goingoff_btn3
+org.mems.R$id: int goingon_btn1
+org.mems.R$id: int goingon_btn2
+org.mems.R$id: int goingon_btn3
+org.mems.R$id: int helpbtn
+org.mems.R$id: int led_name
+org.mems.R$id: int lightBing
+org.mems.R$id: int lightName
+org.mems.R$id: int lightTou
+org.mems.R$id: int light_name
+org.mems.R$id: int ontimesavebtn
+org.mems.R$id: int reconnect_device
+org.mems.R$id: int second_page
+org.mems.R$id: int set_time_off
+org.mems.R$id: int set_time_on
+org.mems.R$id: int switch_schedule_off
+org.mems.R$id: int switch_schedule_on
+org.mems.R$id: int switchall_btn
+org.mems.R$id: int third_page
+org.mems.R$id: int timeschedule_off_1
+org.mems.R$id: int timeschedule_off_3
+org.mems.R$id: int timeschedule_on_1
+org.mems.R$id: int timeschedule_on_3
+org.mems.R$id: int versionNumber
+org.mems.R$id: int webview
+org.mems.R$layout: int activity_device_scan
+org.mems.R$layout: int activity_main
+org.mems.R$layout: int activity_main_device_item
+org.mems.R$layout: int activity_settings
+org.mems.R$layout: int gridview_item
+org.mems.R$layout: int splash_activity
+org.mems.R$layout: int viphelp_website
+org.mems.R$string: int app_name
+org.mems.R$string: int btn_add_device
+org.mems.R$string: int btn_change_name
+org.mems.R$string: int btn_finish_add_device
+org.mems.R$string: int btn_light_off_all
+org.mems.R$string: int btn_light_on_all
+org.mems.R$string: int btn_save_name
+org.mems.R$string: int btn_start_scan
+org.mems.R$string: int btn_stop_scan
+org.mems.R$string: int change_led_brightness
+org.mems.R$string: int change_led_color
+org.mems.R$string: int change_led_name
+org.mems.R$string: int device_details
+org.mems.R$string: int help
+org.mems.R$string: int led_name
+org.mems.R$string: int reconnect_device
+org.mems.R$string: int remove_led
+org.mems.R$string: int schedule_off
+org.mems.R$string: int schedule_on
+org.mems.R$string: int set_time
+org.mems.R$style: int TopTypeRight_Button
+org.mems.ShutdownReceiver
+org.mems.ShutdownReceiver: ShutdownReceiver()
+org.mems.SplashActivity
+org.mems.SplashActivity: SplashActivity()
+org.mems.TheApplication
+org.mems.TheApplication: TheApplication()
